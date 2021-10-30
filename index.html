@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer sitio web</title>
+    <!--IConos place holder-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+    <header></header>
+<!--Navbar-->
+    <nav id="nav-container" class="row container-fluid m-0 bg-warning d-flex sticky-top">
+        <div id="logo" class="container col-sm-1 col-lg-4 col-m-2 logo d-flex justify-content-start">
+            <a href="#" class="col-1">
+             <img id="logoimg" src="./images/logo.png" alt="Emanuel Caro">
+            </a>
+        </div>
+        <div class="links-nav container col-lg-4 col-sm-6 col-md-5">
+            <ul class="container d-inline-flex justify-content-between mt-4">
+                <li class="list-item">
+                    <a href="#">
+                        About me
+                    </a>
+
+                </li>
+                <li class="list-item">
+                    <a href="#">
+                        My store
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="#">
+                        Contact me
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+ <!-- Slider -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+            <img src="images/imagen3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="./images/imagen1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/imagen2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+            </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+  <!-- Content Cards-->
+    <div id="myStore"class="container-fluid row d-flex  mt-lg-4 mt-md-3 mt-sm-1 pe-0 justify-content-center">
+        <h1 class="bg-warning col-12 text-center rounded">My store</h1>
+
+        <div class="container-fluid row d-flex mt-lg-4 mt-md-3 mt-sm-1 pe-0 justify-content-center">
+            <div class="card me-lg-5 me-sm-2 mt-3" style="width: 18rem;">
+                <div class="imageContainer">
+                <img src="images/guitarras.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                <h5 class="card-title text-center">Guitarras</h5>
+                <p class="card-text text-center">Descubre las mejores ofertas y recomendaciones en guitarras </p>
+                <a href="#" class="btn btn-warning ">Ir a la tienda</a>
+                </div>
+            </div>
+
+            <div class="card me-lg-5 me-sm-2 mt-3" style="width: 18rem;">
+                <div class="imageContainer d-flex align-items-center">
+                <img src="images/clasesGuitarra.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                <h5 class="card-title text-center">Clases Online</h5>
+                <p class="card-text text-center">Comienza ya tus clases de guitarra y domina la guitarra</p>
+                <a href="#" class="btn btn-warning ">Ir a la academia</a>
+                </div>
+            </div>
+
+            <div class="card me-lg-5 me-sm-2 mt-3 mb-3" style="width: 18rem;">
+                <div class="imageContainer d-flex align-items-center">
+                <img src="images/diseñoweb.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                <h5 class="card-title text-center">Servicios de diseño Web</h5>
+                <p class="card-text text-center">Te ofrecemos los mejores diseños web para que puedas llevar tu negocio al siguiente nivel</p>
+                <a href="#" class="btn btn-warning ">Ir a la página
+                </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<!--Contact me-->
+    <div  class="container-fluid row d-flex  mt-lg-4 mt-md-3 mt-sm-1 pe-0 justify-content-center">
+        <h1 class="bg-warning col-12 text-center rounded">Contact Me</h1>
+
+
+        <div class="col-4" id="contact-container">
+            <img src="images/contactMe.jpg" alt="contacto">
+        </div>
+        <div id="form-container"class="col-lg-6 col-sm-12 d-flex align-items-center mb-2" id="contact-container">
+            <form id="form"class="container d-flex flex-column">
+                <input class="m-1" type="text" id="form-item" placeholder=" Nombre y Apellido">
+                <input class="m-1" type="email" id="form-item" placeholder=" email@email.com">
+                <textarea class="m-1 message" placeholder=" Escriba aqui su mensaje" name="message" id="mensaje" cols="30" rows="10"></textarea>
+                <input id="form-button" type="submit" class="btn btn-danger m-1">
+            </form>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div id="footer" class="container-fluid bg-warning">
+        <footer class="row d-flex justify-content-around">
+
+            <div class="col-lg-4 col-md-3 col-sm-2 mt-2 d-flex justify-content-center">
+                <div id="logo-footer" class="loguito">
+                    <img class="imagen-footer" src="./images/logo.png" alt="logo">
+
+                </div>
+            </div>
+
+
+            <div id="derechos" class="col-lg-4 col-md-3 col-sm-2 d-flex text-center align-items-end justify-content-center">
+                <p class="parrafo font-weight-light">© 2021 | Emanuel Caro - Todos los derechos reservados</p>
+                <hr />
+            </div>
+
+            <div class="col-lg-4 col-md-3 col-sm-2d-flex flex-column">
+                <h2 class="mt-4 text-center">Redes sociales </h2>
+                <div class="container d-flex justify-content-around">
+                    <a id="social-link" href="https://www.facebook.com/emanuel.caro.129"><em id="social" class="fab fa-facebook-square"></em></a>
+                    <a id="social-link" href="https://www.instagram.com/emanuelcaro1/"><em id="social" class="fab fa-instagram-square"></em></a>
+                    <a id="social-link" href="https://github.com/darkemlord"><em id="social" class="fab fa-git-square"></em></a>
+                    <a id="social-link" href="https://www.linkedin.com/in/emanuel-samir-quistial-1b0270194/"><em id="social" class="fab fa-linkedin"></em></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
